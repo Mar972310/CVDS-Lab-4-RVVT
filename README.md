@@ -3,16 +3,9 @@
 ### Ciclo de Vida de Desarrollo de Software
 
 ## INTEGRANTES
-
-<<<<<<< HEAD
 **Maria Valentina Torres Monsalve**\
 **Jose Ricardo Vasquez Vega**
 ------------------------------------------------------
-=======
-Maria Valentina Torres Monsalve/
-Jose Ricardo Vasquez Vega
->>>>>>> 4bb6101b036dd3f8deabba2a5370ee945d346cec
-
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
 
 Para este taller se va a trabajar sobre el juego del ahorcado.
@@ -36,6 +29,7 @@ puntuación, los cuales se describen a continuación:
     * Se bonifica con 10 puntos cada letra correcta.
     * Se penaliza con 5 puntos cada letra incorrecta.
     * El puntaje mínimo es 0
+    
 ![Alt text](img/image-3.png)
 
 * PowerBonusScore:
