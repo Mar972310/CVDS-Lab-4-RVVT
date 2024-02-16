@@ -42,7 +42,7 @@ public class GameScoreTest{
     public void givenPowerScoreShouldNotDoAnythingWhenScoreIsBetween1And500() {
         // Arrange
         PowerScore score = new PowerScore();
-        int expected = 125;
+        int expected = 155;
         // Act
         int actual = score.calculateScore(3, 0);
         // Assert

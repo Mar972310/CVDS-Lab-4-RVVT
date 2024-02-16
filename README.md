@@ -4,12 +4,11 @@
 
 ## INTEGRANTES
 
-Maria Valentina Torres Monsalve
-Jose Ricardo Vasquez Vega
+**Maria Valentina Torres Monsalve**\
+**Jose Ricardo Vasquez Vega**
+------------------------------------------------------
 
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
-
-
 
 Para este taller se va a trabajar sobre el juego del ahorcado.
 
@@ -25,11 +24,14 @@ puntuación, los cuales se describen a continuación:
     * Se penaliza con 10 puntos con cada letra incorrecta.
     * El puntaje minimo es 0.
 
+![Alt text](img/image-2.png)
+
 * BonusScore:
     * El juego inicia en 0 puntos.
     * Se bonifica con 10 puntos cada letra correcta.
     * Se penaliza con 5 puntos cada letra incorrecta.
     * El puntaje mínimo es 0
+![Alt text](img/image-3.png)
 
 * PowerBonusScore:
     * El juego inicia en 0 puntos.
@@ -38,6 +40,8 @@ puntuación, los cuales se describen a continuación:
     * El puntaje mínimo es 0
     * Si con las reglas anteriores sobrepasa 500 puntos, el puntaje es
         500.
+
+![Alt text](img/image-1.png)
 
 Lo anterior, se traduce en el siguiente modelo, donde se aplica el
 principio de inversión de dependencias:
@@ -72,13 +76,15 @@ principio de inversión de dependencias:
 5. Actualice el archivo `pom.xml` e incluya las dependencias para la ultima versión de JUnit y la versión del compilador
    de Java a la versión 8.
 
-![img.png](img.png)
+![Alt text](img/img.png)
 
 6. Teniendo en cuenta dichas especificaciones, en la clase donde se
    implementarán las pruebas (GameScoreTest), en los
    comentarios iniciales, especifique las clases de equivalencia para
    las tres variantes de GameScore, e identifique
    condiciones de frontera.
+
+![Alt text](img/image.png)
 
 7. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
@@ -142,3 +148,6 @@ Incorpore el Contenedor Liviano Guice dentro del proyecto:
   referencia](https://github.com/PDSW-ECI/LightweighContainers_DepenendecyInjectionIntro-WordProcessor).
 
 
+
+
+[def]: image-4.png
