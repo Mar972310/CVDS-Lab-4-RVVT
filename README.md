@@ -4,7 +4,7 @@
 
 ## INTEGRANTES
 
-Maria Valentina Torres Monsalve
+Maria Valentina Torres Monsalve /
 Jose Ricardo Vasquez Vega
 
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
