@@ -1,6 +1,6 @@
 package hangman.model.Implementation;
 
-public class BonusScore {
+public class BonusScore implements GameScore{
     /**
      * Este metodo calcula si el puntaje de acuerdo con las letras correctas e incorrectas.
      *

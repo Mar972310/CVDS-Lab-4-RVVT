@@ -1,6 +1,6 @@
 package hangman.model.Implementation;
 
-public class OriginalScore {
+public class OriginalScore implements GameScore{
 
     /**
      * Este metodo calcula si el puntaje de acuerdo con las letras correctas e incorrectas.

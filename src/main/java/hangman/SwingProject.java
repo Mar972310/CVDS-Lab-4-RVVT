@@ -54,8 +54,10 @@ public class SwingProject {
 
     //method: main
     //purpose: the entry-point to our application
+
     public static void main(String[] args) {
-        createGUIUsingFactoryMethod().play();
+        //createGUIUsingFactoryMethod().play();
+        createGUIUsingGuice().play();
     }
 
 }

@@ -13,6 +13,7 @@
  ****************************************************************/
 package hangman.model;
 
+
 public class GameOverModel {
     public String GAME_OVER_TEXT = "Game Over!";
     private int score;

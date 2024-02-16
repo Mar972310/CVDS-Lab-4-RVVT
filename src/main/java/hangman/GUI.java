@@ -3,6 +3,7 @@ package hangman;
 import com.google.inject.Inject;
 import hangman.controller.*;
 import hangman.model.*;
+import hangman.model.Implementation.GameScore;
 import hangman.model.dictionary.HangmanDictionary;
 import hangman.setup.factoryMethod.HangmanFactoryMethod;
 import hangman.view.*;
@@ -41,6 +42,7 @@ public class GUI {
     private CreditsController creditsController;
     private GameOverController gameoverController;
     private HighScoreController highScoreController;
+    private GameScore gameScore;
 
     // Use Factory method
     public GUI(HangmanFactoryMethod factoryMethod) {
@@ -51,10 +53,11 @@ public class GUI {
 
     @Inject
     // Use Guice constructor
-    public GUI(Language language, HangmanDictionary dictionary, HangmanPanel hangmanPanel) {
+    public GUI(Language language, HangmanDictionary dictionary, HangmanPanel hangmanPanel, GameScore gameScore) {
         this.language = language;
         this.dictionary = dictionary;
         this.hangmanPanel = hangmanPanel;
+        this.gameScore = gameScore;
     }
 
     // method: setup
@@ -78,7 +81,7 @@ public class GUI {
                 mainFrameController
         );
 
-        GameModel gameModel = new GameModel(dictionary);
+        GameModel gameModel = new GameModel(dictionary, gameScore);
         gameController = new GameController(
                 new GamePanel(gameModel.getCharacterSet(), hangmanPanel, language),
                 gameModel,

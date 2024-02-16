@@ -2,7 +2,14 @@
 
 ### Ciclo de Vida de Desarrollo de Software
 
+## INTEGRANTES
+
+Maria Valentina Torres Monsalve
+Jose Ricardo Vasquez Vega
+
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
+
+
 
 Para este taller se va a trabajar sobre el juego del ahorcado.
 
@@ -133,3 +140,5 @@ Incorpore el Contenedor Liviano Guice dentro del proyecto:
     * etc...
 * Para lo anterior, [puede basarse en el ejemplo dado como
   referencia](https://github.com/PDSW-ECI/LightweighContainers_DepenendecyInjectionIntro-WordProcessor).
+
+

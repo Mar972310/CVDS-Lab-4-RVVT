@@ -1,6 +1,6 @@
 package hangman.model.Implementation;
 import java.lang.Math;
-public class PowerScore {
+public class PowerScore implements GameScore{
 
     /**
      * Este metodo calcula si el puntaje de acuerdo con las letras correctas e incorrectas.
@@ -13,12 +13,18 @@ public class PowerScore {
      * y penalización de 8 puntos por cada letra incorrecta.
      */
     public int calculateScore(int correctCount, int incorrectCount){
-        int score = (int) (Math.pow(5, correctCount) - incorrectCount * 8);
-        if (score < 0){
-            score = 0;
-        } else if (score > 500) {
-            score = 500;
+        
+        int score = 0;
+        for (int i = 1; i<correctCount+1; i++){
+            score += (int) Math.pow(5, i);
         }
-        return score;
+        int result = score - 8 * incorrectCount;
+        if (result < 0){
+            result = 0;
+        } else if (result > 500) {
+            result = 500;
+        }
+        return result;
     }
+    
 }
