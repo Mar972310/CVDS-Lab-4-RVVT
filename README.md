@@ -4,9 +4,14 @@
 
 ## INTEGRANTES
 
+<<<<<<< HEAD
 **Maria Valentina Torres Monsalve**\
 **Jose Ricardo Vasquez Vega**
 ------------------------------------------------------
+=======
+Maria Valentina Torres Monsalve/
+Jose Ricardo Vasquez Vega
+>>>>>>> 4bb6101b036dd3f8deabba2a5370ee945d346cec
 
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
 
