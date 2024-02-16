@@ -12,8 +12,11 @@ public class BonusScore {
      * por una bonificación de 10 puntos por letra correcta.
      */
     public int calculateScore(int correctCount, int incorrectCount){
-
-        return 0;
+        int score = correctCount * 10 - incorrectCount * 5;
+        if (score < 0){
+            score = 0;
+        }
+        return score;
     }
 
 }

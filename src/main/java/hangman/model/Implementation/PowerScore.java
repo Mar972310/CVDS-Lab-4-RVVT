@@ -1,6 +1,6 @@
 package hangman.model.Implementation;
-
-public class PowerBonusScore {
+import java.lang.Math;
+public class PowerScore {
 
     /**
      * Este metodo calcula si el puntaje de acuerdo con las letras correctas e incorrectas.
@@ -13,7 +13,12 @@ public class PowerBonusScore {
      * y penalización de 8 puntos por cada letra incorrecta.
      */
     public int calculateScore(int correctCount, int incorrectCount){
-
-        return 0;
+        int score = (int) (Math.pow(5, correctCount) - incorrectCount * 8);
+        if (score < 0){
+            score = 0;
+        } else if (score > 500) {
+            score = 500;
+        }
+        return score;
     }
 }
